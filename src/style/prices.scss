@@ -1,0 +1,119 @@
+.prices {
+  padding: 20px 0;
+
+  &__title {
+    margin: 0 -5%;
+    padding: 20px 0;
+    background: linear-gradient(to right, $bg-main, $bg-white);
+    border-top: 1px solid $header-bottom;
+  }
+
+  &__title-text {
+    margin: 0 5%;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    list-style-type: none;
+    padding: 0 5%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 220px;
+    height: 140px;
+    padding: 15px;
+    background: $bg-white;
+    cursor: pointer;
+  }
+
+  &__top,
+  &__middle,
+  &__bottom-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: $card-button-bg;
+    padding: 4px 10px;
+    border-radius: 30px;
+    border: 0;
+    color: $bg-white; 
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 13px;
+  }
+
+  &__text_btn {
+    font-size: 12px;
+  }
+
+  &__text-color {
+    color: $text-card;
+  }
+
+  &__arrow {
+    width: 40px; 
+    height: 40px;
+    align-self: flex-end;
+  }
+
+  &__pagination {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  &__round {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $bg-pagination;
+  }
+
+  &__round_active {
+    background: $bg-pagination-active;
+  }
+
+  &__total {
+    margin-top: 20px;
+  }
+
+  &__total-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn-arrow {
+    display: flex;
+    align-items: center;
+  }
+
+  &__description {
+    margin-top: 10px;
+  }
+
+  &__description_m0 {
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,28 @@
+.ribbon {
+  padding-bottom: 25px;
+
+  &__inner {
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+  }
+
+  &__item {
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    color: $text-card;
+  }
+
+  &__item_active {
+    border: 2px solid $border-active;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background: $bg-white;
+  }
+}

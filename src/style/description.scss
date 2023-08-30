@@ -1,0 +1,29 @@
+.description {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: 0;
+    background: $bg-main;
+    cursor: pointer;
+  }
+
+  &__img {
+    margin: 0 -5%;
+  }
+
+  &__text {
+    font-size: 15px;
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}

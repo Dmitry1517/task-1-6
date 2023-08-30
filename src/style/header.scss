@@ -1,0 +1,21 @@
+.header {
+  padding: 18px 0;
+  border-bottom: 1px solid $header-bottom;
+  
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    border: 0;
+    width: 40px;
+    border-radius: 50%;
+    background: $bg-white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

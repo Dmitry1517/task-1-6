@@ -1,0 +1,17 @@
+.footer {
+  padding: 10px 0;
+  background: $bg-main;
+  border-top: 1px solid $header-bottom;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__text {
+    color: $text-card;
+    font-size: 13px;
+    text-align: center;
+  }
+}
