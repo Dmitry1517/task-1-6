@@ -1,5 +1,6 @@
 .description {
   &__inner {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -12,6 +13,7 @@
     border: 0;
     background: $bg-main;
     cursor: pointer;
+    margin-top: 30px;
   }
 
   &__img {
@@ -20,10 +22,47 @@
 
   &__text {
     font-size: 15px;
+    line-height: 20px;
+  }
+
+  &__text_mt,
+  &__text_inline {
+    display: none;
   }
 
   &__btn {
     font-weight: 500;
     font-size: 18px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .description {
+    &__inner {
+      flex-direction: row;
+      gap: 60px;
+    }
+
+    &__block-text {
+      width: 45%;
+    }
+
+    &__text_mt {
+      display: block;
+      margin-top: 30px;
+    }
+
+    &__img {
+      width: 55%;
+      margin: 0;
+    }
+  }
+}
+
+@media all and (min-width: 1120px) {
+  .description {
+    &__text_inline {
+      display: inline;
+    }
   }
 }

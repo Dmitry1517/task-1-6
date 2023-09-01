@@ -1,6 +1,23 @@
 .title {
   position: relative;
   padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__right {
+    display: none;
+    padding-right: 5%;
+    list-style-type: none;
+    gap: 30px;
+  }
+
+  &__right-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+  }
 
   &__text {
     margin: 0;
@@ -16,5 +33,13 @@
     border-bottom-right-radius: 8px;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+@media all and (min-width: 1120px) {
+  .title {
+    &__right {
+      display: flex;
+    }
   }
 }

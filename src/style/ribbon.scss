@@ -26,3 +26,11 @@
     background: $bg-white;
   }
 }
+
+@media all and (min-width: 1120px) {
+  .ribbon {
+    &__inner {
+      justify-content: space-between;
+    }
+  }
+}

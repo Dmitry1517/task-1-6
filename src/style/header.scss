@@ -1,21 +1,53 @@
 .header {
-  padding: 18px 0;
   border-bottom: 1px solid $header-bottom;
   
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 18px 0;
   }
 
   &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 0;
     width: 40px;
     border-radius: 50%;
     background: $bg-white;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  }
+
+  &__divider_none,
+  &__call,
+  &__chat,
+  &__profile {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    &__divider_none,
+    &__call,
+    &__chat,
+    &__profile {
+      display: block;
+    }
+
+    &__inner {
+      gap: 25px;
+    }
+
+    &__call {
+      margin-left: auto;
+    }
+  }
+}
+
+@media all and (min-width: 1120px) {
+  .header {
+    display: none;
   }
 }
