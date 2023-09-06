@@ -23,6 +23,10 @@
     overflow-x: auto;
   }
 
+  &__inner::-webkit-scrollbar {
+    width: 0;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -52,16 +56,22 @@
     gap: 10px;
     align-items: center;
     background: $card-button-bg;
-    padding: 4px 10px;
+    padding: 4px 14px;
     border-radius: 30px;
     border: 0;
     color: $bg-white; 
     font-size: 13px;
     cursor: pointer;
+    transition: all 500ms;
+  }
+
+  &__button:hover {
+    opacity: 0.5;
   }
 
   &__text {
     font-size: 13px;
+    font-weight: bold;
   }
 
   &__text_btn {
@@ -107,10 +117,12 @@
   &__btn-arrow {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   &__description {
     margin-top: 10px;
+    cursor: pointer;
   }
 
   &__description_m0 {

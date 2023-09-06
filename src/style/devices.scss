@@ -23,6 +23,10 @@
     overflow-x: auto;
   }
 
+  &__inner::-webkit-scrollbar {
+    width: 0;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;

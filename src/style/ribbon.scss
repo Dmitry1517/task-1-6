@@ -12,11 +12,19 @@
     overflow-x: auto;
   }
 
+  &__inner::-webkit-scrollbar {
+    width: 0;
+  }
+
   &__item {
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
     color: $text-card;
+  }
+
+  &__item:hover {
+    opacity: 0.8;
   }
 
   &__item_active {

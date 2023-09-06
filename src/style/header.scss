@@ -18,6 +18,11 @@
     border-radius: 50%;
     background: $bg-white;
     cursor: pointer;
+    transition: all 500ms;
+  }
+
+  &__button:hover {
+    opacity: 0.5;
   }
 
   &__divider_none,
@@ -25,6 +30,10 @@
   &__chat,
   &__profile {
     display: none;
+  }
+
+  &__search_menu {
+    margin-left: auto;
   }
 }
 
