@@ -16,6 +16,11 @@
     margin-top: 30px;
   }
 
+  &__button_brands,
+  &__button_device {
+    display: none;
+  }
+
   &__img {
     margin: 0 -5%;
   }
@@ -25,14 +30,15 @@
     line-height: 20px;
   }
 
-  &__text_mt,
-  &__text_inline {
-    display: none;
-  }
-
   &__btn {
     font-weight: 500;
     font-size: 18px;
+  }
+
+  &__text_mt,
+  &__text_inline,
+  &__hidden {
+    display: none;
   }
 }
 
@@ -49,17 +55,22 @@
 
     &__text_mt {
       display: block;
-      margin-top: 30px;
+      margin-top: 15px;
     }
 
     &__img {
       width: 55%;
       margin: 0;
     }
+
+    &__button_brands,
+    &__button_device {
+      display: flex;
+    }
   }
 }
 
-@media all and (min-width: 1120px) {
+@media all and (min-width: 1440px) {
   .description {
     &__text_inline {
       display: inline;

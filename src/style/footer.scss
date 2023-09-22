@@ -7,11 +7,41 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 20px;
   }
 
   &__text {
     color: $text-card;
     font-size: 13px;
     text-align: center;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    &__inner {
+      flex-direction: row;
+    }
+
+    &__text {
+      flex-basis: 33.333%;
+    }
+
+    &__top {
+      text-align: left;
+    }
+
+    &__center {
+      text-align: center;
+    }
+
+    &__bottom {
+      text-align: right;
+    }
   }
 }

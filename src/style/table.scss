@@ -1,0 +1,36 @@
+.table {
+  display: none;
+
+  &__header {
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr 110px;
+    font-size: 13px;
+    padding: 0 20px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr auto;
+    font-size: 13px;
+    padding: 0 20px;
+    background: $bg-white;
+    border-radius: 7px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+  }
+
+  &__border-bottom {
+    border-bottom: 2px solid $bg-main;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .table {
+    display: block;
+  }
+}
+

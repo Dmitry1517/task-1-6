@@ -11,3 +11,4 @@ closeBurgerBtn.addEventListener("click", () => {
   burgerMenu.style.transform = "translateX(-100%)";
   burgerMenu.style.boxShadow = "";
 });
+
