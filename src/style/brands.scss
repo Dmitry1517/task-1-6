@@ -14,11 +14,11 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-gap: 10px;
     list-style-type: none;
     padding: 0 5%;
-    height: 145px;
+    height: 100%;
     scroll-behavior: smooth;
     overflow-x: auto;
     overflow-y: hidden;
@@ -63,7 +63,7 @@
   .brands {
     &__inner {
       grid-template-columns: repeat(3, 1fr);
-      //height: 150px;
+      height: 145px;
     }
 
     &__item {
