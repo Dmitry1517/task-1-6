@@ -94,7 +94,7 @@ function slideDevices() {
       const finalScrollLeft = Math.min(newScrollLeft, maxScrollLeft);
       devicesInner.scrollTo({
         left: finalScrollLeft,
-        behavior: "smooth"
+        behavior: "smooth",
       })
 
       const activePag = Math.floor(finalScrollLeft / 262);
