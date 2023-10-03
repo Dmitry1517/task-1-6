@@ -14,7 +14,6 @@ function allBrands() {
       imgArrow.style.rotate = "0deg"
       btnText.innerHTML = "Показать все"
     }
-    
   })
 }
 

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <title>Task 1.6</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <div class="header__logo">
           <img src="./img/Group.svg" alt="logo">
         </div>
-        <button class="header__call header__button">
+        <button data-open-call class="header__call header__button">
           <img src="./img/call.svg" alt="call">
         </button>
         <button class="header__chat header__button">
@@ -34,12 +35,77 @@
         <button class="header__settings header__button">
           <img src="./img/sett.svg" alt="settings">
         </button>
-        <button class="header__search header__button">
+        <button data-open-fidback class="header__search header__button">
           <img src="./img/checkstatus.svg" alt="search">
         </button>
       </div>
     </div>
   </header>
+
+  <div data-call-modal class="order order_none">
+    <div class="order__header">
+      <div class="container">
+        <div class="order__header-inner">
+          <button data-close-call class="burger-menu__close header__button">
+            <img src="./img/burger-close.svg" alt="close">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="title">
+      <h2 class="title__text">Заказать звонок</h2>
+      <div class="title__marker"></div>
+    </div>
+    <div class="container">
+      <form action="" class="order__form">
+        <input type="phone" class="order__input" placeholder="Телефон">
+        <span class="order__text">
+          Нажимая “отправить”, вы даете согласие на <span class="order__text_red">обработку персональных данных</span> и соглашаетесь с нашей 
+          <span class="order__text_red">политикой конфиденциальности</span>
+        </span>
+        <div class="order__btn-block">
+          <button class="prices__button order__button">
+            <span class="prices__text">отправить</span>  
+            <img src="./img/goside.svg" alt="arrow">  
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div data-fidback-modal class="order order_none">
+    <div class="order__header">
+      <div class="container">
+        <div class="order__header-inner">
+          <button data-close-fidback class="burger-menu__close header__button">
+            <img src="./img/burger-close.svg" alt="close">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="title">
+      <h2 class="title__text">Обратная связь</h2>
+      <div class="title__marker"></div>
+    </div>
+    <div class="container">
+      <form action="" class="order__form">
+        <input type="text" class="order__input" placeholder="Имя">
+        <input type="phone" class="order__input" placeholder="Телефон">
+        <input type="email" class="order__input" placeholder="Электронная почта">
+        <textarea class="order__input" cols="30" rows="3" placeholder="Сообщение"></textarea>
+        <span class="order__text">
+          Нажимая “отправить”, вы даете согласие на <span class="order__text_red">обработку персональных данных</span> и соглашаетесь с нашей 
+          <span class="order__text_red">политикой конфиденциальности</span>
+        </span>
+        <div class="order__btn-block">
+          <button class="prices__button order__button">
+            <span class="prices__text">отправить</span>  
+            <img src="./img/goside.svg" alt="arrow">  
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <main class="main">
 
@@ -47,7 +113,7 @@
       <div class="burger-menu__header">
         <div class="container">
           <div class="burger-menu__header-inner">
-            <button class="burger-menu__close header__button">
+            <button data-close-burger class="burger-menu__close header__button">
               <img src="./img/burger-close.svg" alt="close">
             </button>
             <div class="header__logo">
@@ -74,7 +140,7 @@
       <footer class="burger-menu__footer">
         <div class="container">
           <div class="burger-menu__buttons">
-            <button class="header__button">
+            <button data-open-call class="header__button">
               <img src="./img/call.svg" alt="call">
             </button>
             <button class="header__button">
@@ -158,7 +224,7 @@
           </div>
         </div>
         
-        <ul class="brands__inner">
+        <ul class="brands__inner" data-slides>
           <li class="brands__item">
             <img src="./img/lenovo.svg" alt="brands">
             <img src="./img/arrow-right.svg" alt="arrow">
@@ -205,6 +271,7 @@
           <div class="brands__round"></div>
           <div class="brands__round"></div>
           <div class="brands__round"></div>
+          <div class="brands__round"></div>
         </div> 
 
         <div class="container">
@@ -213,7 +280,6 @@
             <span class="description__btn description__btn_brands">Показать все</span>
           </button>
         </div>
-        
       </div>
   
       <div class="devices">
@@ -247,9 +313,6 @@
         </ul>
         <div class="devices__pagination">
           <div class="devices__round devices__round_active"></div>
-          <div class="devices__round"></div>
-          <div class="devices__round"></div>
-          <div class="devices__round"></div>
           <div class="devices__round"></div>
           <div class="devices__round"></div>
           <div class="devices__round"></div>
@@ -479,5 +542,17 @@
     </section>
   </main>
   
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      leftedSlides: true,
+      pagination: {
+        el: ".swiper-pagination-castom",
+        clickable: true,
+      },
+    });
+    
+  </script>
 </body>
 </html>

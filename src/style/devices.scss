@@ -69,11 +69,11 @@
   .devices {
     &__inner {
       grid-template-columns: repeat(3, 1fr);
-      //height: 150px;
     }
 
     &__item {
       width: auto;
+      height: 130px;
     }
 
     &__pagination {

@@ -1,6 +1,7 @@
 .main {
   background: $bg-main;
   padding-bottom: 20px;
+  transition: 600ms;
 }
 
 @media all and (min-width: 1440px) {

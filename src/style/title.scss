@@ -36,6 +36,12 @@
   }
 }
 
+@media all and (min-width: 768px) {
+  .title {
+    padding: 30px 0;
+  }
+}
+
 @media all and (min-width: 1440px) {
   .title {
     &__right {
