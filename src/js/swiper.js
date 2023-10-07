@@ -33,12 +33,13 @@ function slideBrands() {
       const newScrollLeft = Math.ceil(scrollLeft / containerWidth) * containerWidth;
       const maxScrollLeft = scrollWidth - containerWidth;
       const finalScrollLeft = Math.min(newScrollLeft, maxScrollLeft);
+      const activePag = Math.floor(finalScrollLeft / 262);
+
       brandsInner.scrollTo({
         left: finalScrollLeft,
         behavior: "smooth"
       })
-
-      const activePag = Math.floor(finalScrollLeft / 262);
+      
       setActivePag(activePag);
 
       function setActivePag(activePag) {
@@ -51,6 +52,7 @@ function slideBrands() {
         })
       }
     }
+    
   })
 }
 

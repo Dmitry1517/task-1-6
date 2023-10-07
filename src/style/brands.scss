@@ -13,7 +13,7 @@
   }
 
   &__inner {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(9, 1fr);
     grid-gap: 10px;
     list-style-type: none;

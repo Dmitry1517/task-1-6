@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
   <title>Task 1.6</title>
 </head>
 <body>
@@ -224,56 +224,68 @@
           </div>
         </div>
         
-        <ul class="brands__inner" data-slides>
-          <li class="brands__item">
-            <img src="./img/lenovo.svg" alt="brands">
-            <img src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="brands__item">
-            <img src="./img/sumsung.svg" alt="brands">
-            <img src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="brands__item">
-            <img src="./img/apple.svg" alt="brands">
-            <img src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="brands__item">
-            <img src="./img/viewsonic.svg" alt="brands">
-            <img src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="brands__item">
-            <img src="./img/bosh.svg" alt="brands">
-            <img src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="brands__item">
-            <img src="./img/hp.svg" alt="brands">
-            <img src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="brands__item">
-            <img src="./img/acer.svg" alt="brands">
-            <img src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="brands__item">
-            <img src="./img/Sony.svg" alt="brands">
-            <img src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="brands__item">
-            <img src="./img/apple.svg" alt="brands">
-            <img src="./img/arrow-right.svg" alt="arrow">
-          </li>
-        </ul>
-        <div class="brands__pagination">
-          <div class="brands__round brands__round_active"></div>
-          <div class="brands__round"></div>
-          <div class="brands__round"></div>
-          <div class="brands__round"></div>
-          <div class="brands__round"></div>
-          <div class="brands__round"></div>
-          <div class="brands__round"></div>
-          <div class="brands__round"></div>
-          <div class="brands__round"></div>
-        </div> 
+        <ul class="brands__inner" data-slides></ul>
 
+        <div class="swiper brands__slider">
+          <div class="swiper-wrapper brands__grid">
+            <div class="swiper-slide">
+                <li class="brands__item">
+                  <img src="./img/lenovo.svg" alt="brands">
+                  <img src="./img/arrow-right.svg" alt="arrow">
+                </li>
+            </div>
+            <div class="swiper-slide">
+                <li class="brands__item">
+                  <img src="./img/sumsung.svg" alt="brands">
+                  <img src="./img/arrow-right.svg" alt="arrow">
+                </li>
+            </div>
+            <div class="swiper-slide">
+                <li class="brands__item">
+                  <img src="./img/apple.svg" alt="brands">
+                  <img src="./img/arrow-right.svg" alt="arrow">
+                </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="brands__item">
+                <img src="./img/viewsonic.svg" alt="brands">
+                <img src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="brands__item">
+                <img src="./img/lenovo.svg" alt="brands">
+                <img src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="brands__item">
+                <img src="./img/sumsung.svg" alt="brands">
+                <img src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="brands__item">
+                <img src="./img/apple.svg" alt="brands">
+                <img src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="brands__item">
+                <img src="./img/viewsonic.svg" alt="brands">
+                <img src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="brands__item">
+                <img src="./img/apple.svg" alt="brands">
+                <img src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
         <div class="container">
           <button class="description__button description__button_brands">
             <img class="description__img-arrow description__img-arrow_brands" src="./img/arrow.svg" alt="arrow">
@@ -289,35 +301,46 @@
           </div>
         </div>
         
-        <ul class="devices__inner">
-          <li class="devices__item">
-            <span>Ремонт ноутбуков</span>
-            <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="devices__item">
-            <span>Ремонт планшетов</span>
-            <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="devices__item">
-            <span>Ремонт ПК</span>
-            <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="devices__item">
-            <span>Ремонт мониторов</span>
-            <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
-          </li>
-          <li class="devices__item">
-            <span>Ремонт телефонов</span>
-            <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
-          </li>
-        </ul>
-        <div class="devices__pagination">
-          <div class="devices__round devices__round_active"></div>
-          <div class="devices__round"></div>
-          <div class="devices__round"></div>
-          <div class="devices__round"></div>
-          <div class="devices__round"></div>
-        </div> 
+        <ul class="devices__inner"></ul>
+        
+        <div class="swiper devices__slider">
+          <div class="swiper-wrapper devices__grid">
+            <div class="swiper-slide">
+              <li class="devices__item">
+                <span>Ремонт ноутбуков</span>
+                <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="devices__item">
+                <span>Ремонт планшетов</span>
+                <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="devices__item">
+                <span>Ремонт ПК</span>
+                <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="devices__item">
+                <span>Ремонт мониторов</span>
+                <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="devices__item">
+                <span>Ремонт телефонов</span>
+                <img class="devices__arrow" src="./img/arrow-right.svg" alt="arrow">
+              </li>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+
         <div class="container">
           <button class="description__button description__button_device">
             <img class="description__img-arrow description__img-arrow_devices" src="./img/arrow.svg" alt="arrow">
@@ -333,109 +356,124 @@
           </div>
         </div>
         
-        <ul class="prices__inner">
-          <li class="prices__item">
-            <div class="prices__top">
-              <span class="prices__text prices__text-color">Ремонтные услуги</span>
-              <span class="prices__text">Тестирование с выдачей технического заключения</span>
+        <ul class="prices__inner"></ul>
+
+        <div class="swiper prices__slider">
+          <div class="swiper-wrapper prices__grid">
+            <div class="swiper-slide">
+              <li class="prices__item">
+                <div class="prices__top">
+                  <span class="prices__text prices__text-color">Ремонтные услуги</span>
+                  <span class="prices__text">Тестирование с выдачей технического заключения</span>
+                </div>
+                <div class="prices__middle">
+                  <span class="prices__text prices__text-color">Цена</span>
+                  <span class="prices__text">Бесплатно</span>
+                </div>
+                <div class="prices__bottom">
+                  <div class="prices__bottom-left">
+                    <span class="prices__text prices__text-color">Срок</span>
+                    <span class="prices__text">30-120 мин</span>
+                  </div>
+                  <button class="prices__button">
+                    <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
+                    <img src="./img/goside.svg" alt="arrow">  
+                  </button>
+                </div>
+              </li>
             </div>
-            <div class="prices__middle">
-              <span class="prices__text prices__text-color">Цена</span>
-              <span class="prices__text">Бесплатно</span>
+            <div class="swiper-slide">
+              <li class="prices__item">
+                <div class="prices__top">
+                  <span class="prices__text prices__text-color">Ремонтные услуги</span>
+                  <span class="prices__text">Тестирование с выдачей технического заключения</span>
+                </div>
+                <div class="prices__middle">
+                  <span class="prices__text prices__text-color">Цена</span>
+                  <span class="prices__text">Бесплатно</span>
+                </div>
+                <div class="prices__bottom">
+                  <div class="prices__bottom-left">
+                    <span class="prices__text prices__text-color">Срок</span>
+                    <span class="prices__text">30-120 мин</span>
+                  </div>
+                  <button class="prices__button">
+                    <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
+                    <img src="./img/goside.svg" alt="arrow">  
+                  </button>
+                </div>
+              </li>
             </div>
-            <div class="prices__bottom">
-              <div class="prices__bottom-left">
-                <span class="prices__text prices__text-color">Срок</span>
-                <span class="prices__text">30-120 мин</span>
-              </div>
-              <button class="prices__button">
-                <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
-                <img src="./img/goside.svg" alt="arrow">  
-              </button>
+            <div class="swiper-slide">
+              <li class="prices__item">
+                <div class="prices__top">
+                  <span class="prices__text prices__text-color">Ремонтные услуги</span>
+                  <span class="prices__text">Тестирование с выдачей технического заключения</span>
+                </div>
+                <div class="prices__middle">
+                  <span class="prices__text prices__text-color">Цена</span>
+                  <span class="prices__text">Бесплатно</span>
+                </div>
+                <div class="prices__bottom">
+                  <div class="prices__bottom-left">
+                    <span class="prices__text prices__text-color">Срок</span>
+                    <span class="prices__text">30-120 мин</span>
+                  </div>
+                  <button class="prices__button">
+                    <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
+                    <img src="./img/goside.svg" alt="arrow">  
+                  </button>
+                </div>
+              </li>
             </div>
-            
-          </li>
-          <li class="prices__item">
-            <div class="prices__top">
-              <span class="prices__text prices__text-color">Ремонтные услуги</span>
-              <span class="prices__text">Тестирование с выдачей технического заключения</span>
+            <div class="swiper-slide">
+              <li class="prices__item">
+                <div class="prices__top">
+                  <span class="prices__text prices__text-color">Ремонтные услуги</span>
+                  <span class="prices__text">Тестирование с выдачей технического заключения</span>
+                </div>
+                <div class="prices__middle">
+                  <span class="prices__text prices__text-color">Цена</span>
+                  <span class="prices__text">Бесплатно</span>
+                </div>
+                <div class="prices__bottom">
+                  <div class="prices__bottom-left">
+                    <span class="prices__text prices__text-color">Срок</span>
+                    <span class="prices__text">30-120 мин</span>
+                  </div>
+                  <button class="prices__button">
+                    <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
+                    <img src="./img/goside.svg" alt="arrow">  
+                  </button>
+                </div>
+              </li>
             </div>
-            <div class="prices__middle">
-              <span class="prices__text prices__text-color">Цена</span>
-              <span class="prices__text">Бесплатно</span>
+            <div class="swiper-slide">
+              <li class="prices__item">
+                <div class="prices__top">
+                  <span class="prices__text prices__text-color">Ремонтные услуги</span>
+                  <span class="prices__text">Тестирование с выдачей технического заключения</span>
+                </div>
+                <div class="prices__middle">
+                  <span class="prices__text prices__text-color">Цена</span>
+                  <span class="prices__text">Бесплатно</span>
+                </div>
+                <div class="prices__bottom">
+                  <div class="prices__bottom-left">
+                    <span class="prices__text prices__text-color">Срок</span>
+                    <span class="prices__text">30-120 мин</span>
+                  </div>
+                  <button class="prices__button">
+                    <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
+                    <img src="./img/goside.svg" alt="arrow">  
+                  </button>
+                </div>
+              </li>
             </div>
-            <div class="prices__bottom">
-              <div class="prices__bottom-left">
-                <span class="prices__text prices__text-color">Срок</span>
-                <span class="prices__text">30-120 мин</span>
-              </div>
-              <button class="prices__button">
-                <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
-                <img src="./img/goside.svg" alt="arrow">  
-              </button>
-            </div>
-          </li>
-          <li class="prices__item">
-            <div class="prices__top">
-              <span class="prices__text prices__text-color">Ремонтные услуги</span>
-              <span class="prices__text">Тестирование с выдачей технического заключения</span>
-            </div>
-            <div class="prices__middle">
-              <span class="prices__text prices__text-color">Цена</span>
-              <span class="prices__text">Бесплатно</span>
-            </div>
-            <div class="prices__bottom">
-              <div class="prices__bottom-left">
-                <span class="prices__text prices__text-color">Срок</span>
-                <span class="prices__text">30-120 мин</span>
-              </div>
-              <button class="prices__button">
-                <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
-                <img src="./img/goside.svg" alt="arrow">  
-              </button>
-            </div>
-          </li>
-          <li class="prices__item">
-            <div class="prices__top">
-              <span class="prices__text prices__text-color">Ремонтные услуги</span>
-              <span class="prices__text">Тестирование с выдачей технического заключения</span>
-            </div>
-            <div class="prices__middle">
-              <span class="prices__text prices__text-color">Цена</span>
-              <span class="prices__text">Бесплатно</span>
-            </div>
-            <div class="prices__bottom">
-              <div class="prices__bottom-left">
-                <span class="prices__text prices__text-color">Срок</span>
-                <span class="prices__text">30-120 мин</span>
-              </div>
-              <button class="prices__button">
-                <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
-                <img src="./img/goside.svg" alt="arrow">  
-              </button>
-            </div>
-          </li>
-          <li class="prices__item">
-            <div class="prices__top">
-              <span class="prices__text prices__text-color">Ремонтные услуги</span>
-              <span class="prices__text">Тестирование с выдачей технического заключения</span>
-            </div>
-            <div class="prices__middle">
-              <span class="prices__text prices__text-color">Цена</span>
-              <span class="prices__text">Бесплатно</span>
-            </div>
-            <div class="prices__bottom">
-              <div class="prices__bottom-left">
-                <span class="prices__text prices__text-color">Срок</span>
-                <span class="prices__text">30-120 мин</span>
-              </div>
-              <button class="prices__button">
-                <span class="prices__text_btn">ЗАКАЗАТЬ</span>  
-                <img src="./img/goside.svg" alt="arrow">  
-              </button>
-            </div>
-          </li>
-        </ul>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
   
         <div class="container">
           <div class="table">
@@ -500,13 +538,7 @@
           </div>
         </div>
         
-        <div class="prices__pagination">
-          <div class="prices__round prices__round_active"></div>
-          <div class="prices__round"></div>
-          <div class="prices__round"></div>
-          <div class="prices__round"></div>
-          <div class="prices__round"></div>
-        </div> 
+        
         <div class="prices__total">
           <div class="container">
             <div class="prices__total-inner">
@@ -542,17 +574,18 @@
     </section>
   </main>
   
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
-    const swiper = new Swiper(".swiper", {
-      slidesPerView: 1,
-      leftedSlides: true,
-      pagination: {
-        el: ".swiper-pagination-castom",
-        clickable: true,
-      },
-    });
     
-  </script>
+      new Swiper('.swiper', {
+        slidesPerView: 1.2,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    
+  </script> -->
 </body>
 </html>

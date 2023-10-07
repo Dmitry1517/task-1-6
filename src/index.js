@@ -6,3 +6,4 @@ import "./js/showBrands";
 import "./js/showDevice";
 import "./js/modals";
 import "./js/swiper";
+import "./js/swiper-slider";
