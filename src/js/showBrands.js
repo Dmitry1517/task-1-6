@@ -1,6 +1,6 @@
 function allBrands() {
   const btnShowAllBrands = document.querySelector(".description__button_brands");
-  const brandsGrid = document.querySelector(".brands__grid");
+  const brandsGrid = document.querySelector(".brands__slider");
   const imgArrow = document.querySelector(".description__img-arrow_brands");
   const btnText = document.querySelector(".description__btn_brands");
 

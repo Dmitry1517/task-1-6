@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     '.brands__slider',
     {
       loop: true,
-      spaceBetween: -22,
+      spaceBetween: -23,
       slidesPerView: 1.12,
       centeredSlides: true,
       modules: [Pagination],
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     '.devices__slider',
     {
       loop: true,
-      spaceBetween: -22,
+      spaceBetween: -23,
       slidesPerView: 1.12,
       centeredSlides: true,
       modules: [Pagination],
@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
     '.prices__slider',
     {
       loop: true,
-      spaceBetween: -22,
+      spaceBetween: -23,
       slidesPerView: 1.12,
       centeredSlides: true,
       modules: [Pagination],

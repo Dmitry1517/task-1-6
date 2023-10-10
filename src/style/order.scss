@@ -72,3 +72,13 @@
     top: 25px;
   }
 }
+
+@media all and (min-width: 1440px) {
+  button[data-close-call],
+  button[data-close-fidback] {
+    display: block;
+    position: absolute;
+    left: -20%;
+    top: 25px;
+  }
+}
